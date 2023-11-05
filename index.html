@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume creation dynamically</title>
+    <style>
+        table,tr,td{
+            border:3px solid rgb(206, 206, 221);
+            border-collapse: collapse;
+        }
+        body{
+            background-color: rgb(127, 102, 151);
+        }
+    </style>
+
+
+
+</head>
+<body>
+   <center><h2></h2></center>
+   <marquee direction="right"><b>Email address:</b>gajjelabhavani06@gmail.com<br><b>mobile no:</b>8106365707</marquee>
+    <h3></h3>
+    <hr>
+    <h3>EDUCATION</h3>
+    <table style="font-size: large;"></table>
+    <br>
+    <hr>
+    <h3 id="h3">SKILLS</h3>
+
+    <br><hr>
+    <h3 id="declare">DECLARATION</h3>
+    
+
+   
+   
+   
+   
+   <script>
+    let divv=document.getElementsByTagName("h2");
+    divv[0].innerText="BHAVANI";
+    divv[0].style.backgroundColor="rgb(153, 153, 77)";
+    divv[0].style.color="rgb(128, 0, 128)";
+    divv[0].style.padding="8px";
+
+    let marquee=document.getElementsByTagName("marquee");
+    marquee[0].style.backgroundColor="rgb(204, 0, 0)";
+    marquee[0].style.backgroundColor="rgb(255, 255, 204)";
+
+    let title=document.getElementsByTagName("h3");
+    title[0].innerText="CAREER OBJECTIVE";
+    
+
+
+    let career=document.createElement("p");
+    career.innerText="Aspiring Computer Science graduate seeking opportunities to apply technical proficiency and contribute to innovative software solutions in a collaborative work environment.Eager to apply my theoretical knowledge and practical skills to contribute effectively to software development, problem-solving, and continuous learning.";
+    career.style.fontWeight="normal"
+    title[0].appendChild(career);
+
+    let education=document.createElement("h3");
+    education.innerText="EDUCATION";
+    console.log(education);
+
+        let table=document.getElementsByTagName("table");
+        let tablerow=document.createElement("tr");
+        
+        let tabledt=document.createElement("td");
+        tabledt.innerText="Study";
+        tabledt.style.fontWeight="bold";
+        //console.log(tabledt);
+
+        let tabledt1=document.createElement("td");
+        tabledt1.innerText="College";
+        tabledt1.style.fontWeight="bold";
+
+        let tabledt2=document.createElement("td");
+        tabledt2.innerText="percentage";
+        tabledt2.style.fontWeight="bold";
+
+        tablerow.appendChild(tabledt);
+        tablerow.appendChild(tabledt1);
+        tablerow.appendChild(tabledt2);
+
+        table[0].appendChild(tablerow);
+
+        //
+
+        let tablerow1=document.createElement("tr");
+        
+        let tabledtl=document.createElement("td");
+        tabledtl.innerText="B.Tech";
+        tabledtl.style.fontWeight="bold";
+
+        let tabledtl1=document.createElement("td");
+        tabledtl1.innerText="Sree chaitanya college of engineering";
+      
+        let tabledtl2=document.createElement("td");
+        tabledtl2.innerText="70%";
+
+        tablerow1.appendChild(tabledtl);
+        tablerow1.appendChild(tabledtl1);
+        tablerow1.appendChild(tabledtl2);
+
+        table[0].appendChild(tablerow1);
+        //
+
+        let tablerow2=document.createElement("tr");
+        
+        let tabledtbl=document.createElement("td");
+        tabledtbl.innerText="Intermediate";
+        tabledtbl.style.fontWeight="bold";
+       
+
+        let tabledtbl1=document.createElement("td");
+        tabledtbl1.innerText="SR Junior college";
+
+        let tabledtbl2=document.createElement("td");
+        tabledtbl2.innerText="95%";
+       
+
+        tablerow2.appendChild(tabledtbl);
+        tablerow2.appendChild(tabledtbl1);
+        tablerow2.appendChild(tabledtbl2);
+        table[0].appendChild(tablerow2);
+
+        //
+
+        let tableerow=document.createElement("tr");
+        let data=document.createElement("td");
+        data.innerText="SSC";
+        data.style.fontWeight="bold";
+
+        let datanode=document.createElement("td");
+        datanode.innerText="kerala model school";
+
+        let datanodee=document.createElement("td");
+        datanodee.innerText="80%";
+
+        tableerow.appendChild(data);
+        tableerow.appendChild(datanode);
+        tableerow.appendChild(datanodee);
+
+        table[0].appendChild(tableerow);
+
+        //
+        let ele=document.getElementById("h3");
+        let element=document.createElement("p");
+        element.innerText="communication";
+        element.style.fontWeight="normal";
+
+        let element1=document.createElement("p");
+        element1.innerText="c programming";
+        element1.style.fontWeight="normal";
+
+
+        let element2=document.createElement("p");
+        element2.innerText="core java";
+        element2.style.fontWeight="normal";
+
+
+        let element3=document.createElement("p");
+        element3.innerText="html";
+        element3.style.fontWeight="normal";
+
+
+        ele.appendChild(element);
+        ele.appendChild(element1);
+        ele.appendChild(element2);
+        ele.appendChild(element3);
+
+        let declared=document.getElementById("declare")
+        let declare=document.createElement("p");
+        declare.innerText="Dedicated and adaptable professional committed to achieving company goals, bringing strong skills and a proactive attitude to excel in software developer role.";
+        declare.style.fontWeight="normal"
+        
+        declared.appendChild(declare);
+
+        
+       
+        
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+    </script>
+</body>
+</html>
